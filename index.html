@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Memberships · Wheelhouse Clay Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#compare-heading">Skip to the comparison</a>
+
+  <header class="site-header">
+    <p class="studio-name">Wheelhouse Clay Studio</p>
+  </header>
+
+  <main id="main">
+    <section class="intro" aria-labelledby="page-title">
+      <h1 id="page-title">Studio memberships</h1>
+      <p class="lead">Three ways to work at the studio. Every plan includes the safety induction, the glaze library and the tool library. They differ in time, clay, firing and storage.</p>
+    </section>
+
+    <section class="plans" aria-labelledby="plans-heading">
+      <h2 id="plans-heading" class="sr-only">Plans</h2>
+      <ul class="plan-list">
+        <li class="plan">
+          <h3 class="plan-name">Drop-in</h3>
+          <p class="plan-price"><span class="amount">€0</span> a month</p>
+          <p class="plan-note">Pay €18 per booked session. For trying clay out.</p>
+          <button type="button" class="btn" data-plan="Drop-in">Choose Drop-in</button>
+        </li>
+        <li class="plan">
+          <h3 class="plan-name">Regular</h3>
+          <p class="plan-price"><span class="amount">€75</span> a month</p>
+          <p class="plan-note">Weekday access, clay and firings for steady practice.</p>
+          <button type="button" class="btn" data-plan="Regular">Choose Regular</button>
+        </li>
+        <li class="plan">
+          <h3 class="plan-name">Resident</h3>
+          <p class="plan-price"><span class="amount">€160</span> a month</p>
+          <p class="plan-note">A reserved wheel and round-the-clock access.</p>
+          <button type="button" class="btn" data-plan="Resident">Choose Resident</button>
+        </li>
+      </ul>
+      <p class="choice-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="compare" aria-labelledby="compare-heading">
+      <div class="compare-head">
+        <h2 id="compare-heading" tabindex="-1">Compare every feature</h2>
+        <div class="toolbar">
+          <button type="button" class="toggle" id="diff-toggle" aria-pressed="false">
+            <span class="toggle-track" aria-hidden="true"><span class="toggle-thumb"></span></span>
+            <span class="toggle-label">Highlight differences</span>
+          </button>
+          <p class="diff-status" id="diff-status" role="status" aria-live="polite">Highlighting is off.</p>
+        </div>
+      </div>
+
+      <table class="plan-table" id="plan-table" role="table" data-diff="off">
+        <caption class="sr-only">Features of the Drop-in, Regular and Resident memberships, grouped by area</caption>
+        <thead role="rowgroup">
+          <tr role="row">
+            <th role="columnheader" scope="col" class="col-feature">Feature</th>
+            <th role="columnheader" scope="col">Drop-in</th>
+            <th role="columnheader" scope="col">Regular</th>
+            <th role="columnheader" scope="col">Resident</th>
+          </tr>
+        </thead>
+      <tbody role="rowgroup">
+        <tr role="row" class="group-row">
+          <th role="rowheader" scope="rowgroup" colspan="4" id="g1">Studio time</th>
+        </tr>
+        <tr role="row" class="feature-row">
+          <th role="rowheader" scope="row"><span class="feature-name">Open studio hours</span></th>
+          <td role="cell" data-value="Booked sessions only">
+            <span class="cell-plan" aria-hidden="true">Drop-in</span>
+            <span class="cell-value">Booked sessions only</span>
+          </td>
+          <td role="cell" data-value="Weekdays, 10:00–22:00">
+            <span class="cell-plan" aria-hidden="true">Regular</span>
+            <span class="cell-value">Weekdays, 10:00–22:00</span>
+          </td>
+          <td role="cell" data-value="Every day, 24 hours">
+            <span class="cell-plan" aria-hidden="true">Resident</span>
+            <span class="cell-value">Every day, 24 hours</span>
+          </td>
+        </tr>
+        <tr role="row" class="feature-row">
+          <th role="rowheader" scope="row"><span class="feature-name">Wheel access</span></th>
+          <td role="cell" data-value="Bookable 2-hour slots">
+            <span class="cell-plan" aria-hidden="true">Drop-in</span>
+            <span class="cell-value">Bookable 2-hour slots</span>
+          </td>
+          <td role="cell" data-value="Bookable 3-hour slots">
+            <span class="cell-plan" aria-hidden="true">Regular</span>
+            <span class="cell-value">Bookable 3-hour slots</span>
+          </td>
+          <td role="cell" data-value="Your own reserved wheel">
+            <span class="cell-plan" aria-hidden="true">Resident</span>
+            <span class="cell-value">Your own reserved wheel</span>
+          </td>
+        </tr>
+        <tr role="row" class="feature-row">
+          <th role="rowheader" scope="row"><span class="feature-name">Hand-building tables</span></th>
+          <td role="cell" data-value="Included">
+            <span class="cell-plan" aria-hidden="true">Drop-in</span>
+            <span class="cell-value"><svg class="icon" aria-hidden="true" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" /></svg>Included</span>
+          </td>
+          <td role="cell" data-value="Included">
+            <span class="cell-plan" aria-hidden="true">Regular</span>
+            <span class="cell-value"><svg class="icon" aria-hidden="true" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" /></svg>Included</span>
+          </td>
+          <td role="cell" data-value="Included">
+            <span class="cell-plan" aria-hidden="true">Resident</span>
+            <span class="cell-value"><svg class="icon" aria-hidden="true" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" /></svg>Included</span>
+          </td>
+        </tr>
+        <tr role="row" class="feature-row">
+          <th role="rowheader" scope="row"><span class="feature-name">Tool library</span></th>
+          <td role="cell" data-value="Included">
+            <span class="cell-plan" aria-hidden="true">Drop-in</span>
+            <span class="cell-value"><svg class="icon" aria-hidden="true" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" /></svg>Included</span>
+          </td>
+          <td role="cell" data-value="Included">
+            <span class="cell-plan" aria-hidden="true">Regular</span>
+            <span class="cell-value"><svg class="icon" aria-hidden="true" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" /></svg>Included</span>
+          </td>
+          <td role="cell" data-value="Included">
+            <span class="cell-plan" aria-hidden="true">Resident</span>
+            <span class="cell-value"><svg class="icon" aria-hidden="true" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" /></svg>Included</span>
+          </td>
+        </tr>
+      </tbody>
+      <tbody role="rowgroup">
+        <tr role="row" class="group-row">
+          <th role="rowheader" scope="rowgroup" colspan="4" id="g2">Materials and firing</th>
+        </tr>
+        <tr role="row" class="feature-row">
+          <th role="rowheader" scope="row"><span class="feature-name">Clay included</span></th>
+          <td role="cell" data-value="None">
+            <span class="cell-plan" aria-hidden="true">Drop-in</span>
+            <span class="cell-value">None</span>
+          </td>
+          <td role="cell" data-value="10 kg a month">
+            <span class="cell-plan" aria-hidden="true">Regular</span>
+            <span class="cell-value">10 kg a month</span>
+          </td>
+          <td role="cell" data-value="25 kg a month">
+            <span class="cell-plan" aria-hidden="true">Resident</span>
+            <span class="cell-value">25 kg a month</span>
+          </td>
+        </tr>
+        <tr role="row" class="feature-row">
+          <th role="rowheader" scope="row"><span class="feature-name">Glaze library</span></th>
+          <td role="cell" data-value="Included">
+            <span class="cell-plan" aria-hidden="true">Drop-in</span>
+            <span class="cell-value"><svg class="icon" aria-hidden="true" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" /></svg>Included</span>
+          </td>
+          <td role="cell" data-value="Included">
+            <span class="cell-plan" aria-hidden="true">Regular</span>
+            <span class="cell-value"><svg class="icon" aria-hidden="true" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" /></svg>Included</span>
+          </td>
+          <td role="cell" data-value="Included">
+            <span class="cell-plan" aria-hidden="true">Resident</span>
+            <span class="cell-value"><svg class="icon" aria-hidden="true" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" /></svg>Included</span>
+          </td>
+        </tr>
+        <tr role="row" class="feature-row">
+          <th role="rowheader" scope="row"><span class="feature-name">Bisque and glaze firings</span></th>
+          <td role="cell" data-value="Paid per piece">
+            <span class="cell-plan" aria-hidden="true">Drop-in</span>
+            <span class="cell-value">Paid per piece</span>
+          </td>
+          <td role="cell" data-value="Up to 12 pieces a month">
+            <span class="cell-plan" aria-hidden="true">Regular</span>
+            <span class="cell-value">Up to 12 pieces a month</span>
+          </td>
+          <td role="cell" data-value="Unlimited">
+            <span class="cell-plan" aria-hidden="true">Resident</span>
+            <span class="cell-value">Unlimited</span>
+          </td>
+        </tr>
+        <tr role="row" class="feature-row">
+          <th role="rowheader" scope="row"><span class="feature-name">Large-piece firing</span></th>
+          <td role="cell" data-value="Not included">
+            <span class="cell-plan" aria-hidden="true">Drop-in</span>
+            <span class="cell-value"><span aria-hidden="true">—</span><span class="sr-only">Not included</span></span>
+          </td>
+          <td role="cell" data-value="Not included">
+            <span class="cell-plan" aria-hidden="true">Regular</span>
+            <span class="cell-value"><span aria-hidden="true">—</span><span class="sr-only">Not included</span></span>
+          </td>
+          <td role="cell" data-value="Included">
+            <span class="cell-plan" aria-hidden="true">Resident</span>
+            <span class="cell-value"><svg class="icon" aria-hidden="true" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" /></svg>Included</span>
+          </td>
+        </tr>
+      </tbody>
+      <tbody role="rowgroup">
+        <tr role="row" class="group-row">
+          <th role="rowheader" scope="rowgroup" colspan="4" id="g3">Storage</th>
+        </tr>
+        <tr role="row" class="feature-row">
+          <th role="rowheader" scope="row"><span class="feature-name">Shelf space</span></th>
+          <td role="cell" data-value="None">
+            <span class="cell-plan" aria-hidden="true">Drop-in</span>
+            <span class="cell-value">None</span>
+          </td>
+          <td role="cell" data-value="One shelf">
+            <span class="cell-plan" aria-hidden="true">Regular</span>
+            <span class="cell-value">One shelf</span>
+          </td>
+          <td role="cell" data-value="Two shelves">
+            <span class="cell-plan" aria-hidden="true">Resident</span>
+            <span class="cell-value">Two shelves</span>
+          </td>
+        </tr>
+        <tr role="row" class="feature-row">
+          <th role="rowheader" scope="row"><span class="feature-name">Locker</span></th>
+          <td role="cell" data-value="Not included">
+            <span class="cell-plan" aria-hidden="true">Drop-in</span>
+            <span class="cell-value"><span aria-hidden="true">—</span><span class="sr-only">Not included</span></span>
+          </td>
+          <td role="cell" data-value="Included">
+            <span class="cell-plan" aria-hidden="true">Regular</span>
+            <span class="cell-value"><svg class="icon" aria-hidden="true" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" /></svg>Included</span>
+          </td>
+          <td role="cell" data-value="Included">
+            <span class="cell-plan" aria-hidden="true">Resident</span>
+            <span class="cell-value"><svg class="icon" aria-hidden="true" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" /></svg>Included</span>
+          </td>
+        </tr>
+        <tr role="row" class="feature-row">
+          <th role="rowheader" scope="row"><span class="feature-name">Work left to dry</span></th>
+          <td role="cell" data-value="Up to 2 weeks">
+            <span class="cell-plan" aria-hidden="true">Drop-in</span>
+            <span class="cell-value">Up to 2 weeks</span>
+          </td>
+          <td role="cell" data-value="Up to 2 weeks">
+            <span class="cell-plan" aria-hidden="true">Regular</span>
+            <span class="cell-value">Up to 2 weeks</span>
+          </td>
+          <td role="cell" data-value="Up to 2 weeks">
+            <span class="cell-plan" aria-hidden="true">Resident</span>
+            <span class="cell-value">Up to 2 weeks</span>
+          </td>
+        </tr>
+      </tbody>
+      <tbody role="rowgroup">
+        <tr role="row" class="group-row">
+          <th role="rowheader" scope="rowgroup" colspan="4" id="g4">Community</th>
+        </tr>
+        <tr role="row" class="feature-row">
+          <th role="rowheader" scope="row"><span class="feature-name">Guest passes</span></th>
+          <td role="cell" data-value="None">
+            <span class="cell-plan" aria-hidden="true">Drop-in</span>
+            <span class="cell-value">None</span>
+          </td>
+          <td role="cell" data-value="1 a month">
+            <span class="cell-plan" aria-hidden="true">Regular</span>
+            <span class="cell-value">1 a month</span>
+          </td>
+          <td role="cell" data-value="3 a month">
+            <span class="cell-plan" aria-hidden="true">Resident</span>
+            <span class="cell-value">3 a month</span>
+          </td>
+        </tr>
+        <tr role="row" class="feature-row">
+          <th role="rowheader" scope="row"><span class="feature-name">Workshop discount</span></th>
+          <td role="cell" data-value="None">
+            <span class="cell-plan" aria-hidden="true">Drop-in</span>
+            <span class="cell-value">None</span>
+          </td>
+          <td role="cell" data-value="10%">
+            <span class="cell-plan" aria-hidden="true">Regular</span>
+            <span class="cell-value">10%</span>
+          </td>
+          <td role="cell" data-value="25%">
+            <span class="cell-plan" aria-hidden="true">Resident</span>
+            <span class="cell-value">25%</span>
+          </td>
+        </tr>
+        <tr role="row" class="feature-row">
+          <th role="rowheader" scope="row"><span class="feature-name">Member exhibitions</span></th>
+          <td role="cell" data-value="Not included">
+            <span class="cell-plan" aria-hidden="true">Drop-in</span>
+            <span class="cell-value"><span aria-hidden="true">—</span><span class="sr-only">Not included</span></span>
+          </td>
+          <td role="cell" data-value="Included">
+            <span class="cell-plan" aria-hidden="true">Regular</span>
+            <span class="cell-value"><svg class="icon" aria-hidden="true" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" /></svg>Included</span>
+          </td>
+          <td role="cell" data-value="Included">
+            <span class="cell-plan" aria-hidden="true">Resident</span>
+            <span class="cell-value"><svg class="icon" aria-hidden="true" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" /></svg>Included</span>
+          </td>
+        </tr>
+        <tr role="row" class="feature-row">
+          <th role="rowheader" scope="row"><span class="feature-name">Safety induction</span></th>
+          <td role="cell" data-value="Included">
+            <span class="cell-plan" aria-hidden="true">Drop-in</span>
+            <span class="cell-value"><svg class="icon" aria-hidden="true" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" /></svg>Included</span>
+          </td>
+          <td role="cell" data-value="Included">
+            <span class="cell-plan" aria-hidden="true">Regular</span>
+            <span class="cell-value"><svg class="icon" aria-hidden="true" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" /></svg>Included</span>
+          </td>
+          <td role="cell" data-value="Included">
+            <span class="cell-plan" aria-hidden="true">Resident</span>
+            <span class="cell-value"><svg class="icon" aria-hidden="true" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" /></svg>Included</span>
+          </td>
+        </tr>
+      </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Wheelhouse Clay Studio is a fictional studio made for an accessibility exercise.</p>
+  </footer>
+</body>
+</html>
